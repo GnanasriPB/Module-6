@@ -1,4 +1,4 @@
-# Exp.No:29  
+# Exp.No:6c
 ## Encapsulation
 
 ---
@@ -26,14 +26,40 @@ To write a Python program to create a class `Student` with the private members `
 ### PROGRAM
 
 ```
+class Student:
+    def __init__(self, name, age):
+        self.__name = name    # private member
+        self.__age = age      # private member
 
+    # Getter for age
+    def get_age(self):
+        return self.__age
+
+    # Setter for age
+    def set_age(self, age):
+        self.__age = age
+
+    # Display student info
+    def display(self):
+        print(f"Name: {self.__name} {self.__age}")
+
+
+# Create object
+student = Student("Jessa", 14)
+student.display()
+
+# Update age using setter
+student.set_age(16)
+student.display()
 
 
 ```
 
 ### OUTPUT
+<img width="405" height="180" alt="image" src="https://github.com/user-attachments/assets/a2b424e4-1637-412b-a70f-4eb113bad9fe" />
 
 
 ### RESULT
+Thus,Python program to create a class Student with the private members name and age, and add getter and setter methods to initialize and modify the age variable was implemented successfully.
 
 
