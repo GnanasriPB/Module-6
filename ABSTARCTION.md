@@ -34,11 +34,50 @@ To write a Python program to define the abstract base class named `Polygon` and 
 ### PROGRAM
 
 ```
+#Correct the code and add the logic
+from abc import ABC, abstractmethod 
+  
+class Polygon(ABC):
+    @abstractmethod  
+    def sides(self):
+        pass
+  
+class Triangle(Polygon):
+    def sides(self):
+        print("Triangle has 3 sides")   
+  
+class Pentagon(Polygon):
+    def sides(self):
+        print("Pentagon has 5 sides") 
+ 
+class Hexagon(Polygon):
+    def sides(self):
+        print("Hexagon has 6 sides")
+        
+class square(Polygon):
+    def sides(self):
+        print("I have 4 sides")   
+  
+# Driver code   
+t = Triangle()
+t.sides() 
+  
+s = square()
+s.sides()  
+  
+p = Pentagon()  
+p.sides()  
+  
+k = Hexagon()  
+k.sides()
 
 
 ```
 
 ### OUTPUT
 
+<img width="513" height="246" alt="image" src="https://github.com/user-attachments/assets/f6dfe0f9-df21-4100-a624-dc46282c541f" />
+
 
 ### RESULT
+Thus, an abstract class Polygon with an abstract method sides was implemented successfully by all the subclasses.
