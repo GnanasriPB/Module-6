@@ -1,4 +1,4 @@
-# Exp.No:6b 
+## Exp.No:6b 
 
 # Create Counter class which has one attribute called current which defaults to zero
 
@@ -62,6 +62,7 @@ print(counter.value())
 ```
 
 ### OUTPUT
+
 
 
 
